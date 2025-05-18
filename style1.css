@@ -6,19 +6,20 @@
 }
 
 body {
-    padding: 1.25em;
+    padding: 20px;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 75em;
+    max-width: 1200px;
     margin: 0 auto;
+    box-shadow: 10px;
 }
 
 .logo {
-    height: 1.875em; 
+    height: 90px; 
 }
 
 .logo img {
@@ -28,14 +29,14 @@ body {
 
 .navlinks {
     display: flex;
-    gap: 1.875em;
+    gap: 30px;
 }
 
 .navlinks a {
     text-decoration: none;
     color: #333;
-    font-size: 1em;
-    transition: color 0.7s;
+    font-size: 16px;
+    transition: color 0.2s;
 }
 
 .navlinks a:hover {
@@ -44,23 +45,24 @@ body {
 
 .nav-buttons {
     display: flex;
-    gap: 1.25em;
+    gap: 20px;
     align-items: center;
 }
 
 .login-btn {
-    background-color: #F0fff1;
+    background-color: #B3e9c7;
     color: white;
-    padding: 0.625em 1.25em;
-    border-radius: 0.3125em;
+    padding: 10px 20px;
+    border-radius: 5px;
     text-decoration: none;
-    font-size: 1em;
-    transition: background-color 0.7s;
+    font-size: 16px;
+    transition: background-color 0.2s;
 }
 
 .login-btn:hover {
     background-color: white;
-    color:  #F0fff1;        
-    border-color: #F0fff1;
-    border-radius: 0.2em;
+    color: #B3e9c7; 
+    border-style: solid;   
+    border-width: thin;    
+    border-color: #B3e9c7;
 }
