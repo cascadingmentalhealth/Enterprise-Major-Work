@@ -7,7 +7,10 @@
 
 body {
     padding: 20px;
+    background-color: #fafcfb;
 }
+
+/* nav bar */
 
 .navbar {
     display: flex;
@@ -15,7 +18,7 @@ body {
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    box-shadow: 10px;
+    position: sticky;
 }
 
 .logo {
@@ -25,6 +28,7 @@ body {
 .logo img {
     height: 100%;
     width: auto;
+    cursor: pointer;
 }
 
 .navlinks {
@@ -65,4 +69,27 @@ body {
     border-style: solid;   
     border-width: thin;    
     border-color: #B3e9c7;
+}
+
+/* Home text */
+
+.Homebody-text {
+    padding: 60px;
+    justify-content: center;
+    text-align: center;
+}
+
+.Homebody-text h1 {
+    font-weight: normal;
+    padding: 25px;
+    font-size: 50px;
+    padding-left: 290px;
+    padding-right: 290px;
+}
+
+.Homebody-text p {
+    font-weight: light;
+    font-size: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
 }
