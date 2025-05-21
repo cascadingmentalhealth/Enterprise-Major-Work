@@ -39,7 +39,7 @@ body {
 .navlinks a {
     text-decoration: none;
     color: #333;
-    font-size: 16px;
+    font-size: 20px;
     transition: color 0.2s;
 }
 
@@ -59,7 +59,7 @@ body {
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 20px;
     transition: background-color 0.2s;
 }
 
@@ -154,4 +154,70 @@ body {
     color: #777;
     text-align: center;
     margin-top: 5px;
+}
+
+/* Scroll to change colour */
+.color-transition-container {
+    padding: 100px;
+    text-align:left;
+    background-color:#e9ecef ;
+    justify-content: center;
+}
+
+.color-transition {
+    font-size: 55px;
+    font-weight:500;
+    position: relative;
+    margin: 100px 0;
+}
+       
+.text-original {
+    color: #000;
+}
+       
+.text-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    color: #B3e9c7; 
+    white-space: nowrap;
+    overflow: hidden;
+    transition: width 0.1s linear;
+}
+
+/* Get started box */
+.trial-box {
+    padding: 100px;
+    justify-content: center;
+    text-align: center;
+    background-color: #343a40;
+    border-radius: 16px;
+    width: 1150px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.trial-box h1 {
+    color: #fafcfb;
+    font-weight: 500;
+    margin-bottom:20px;
+}
+
+.get-started-btn {
+    background-color: #fafcfb;
+    color: #343a40;
+    padding: 10px 20px;
+    border-radius: 32px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: background-color 0.4s;
+}
+
+.get-started-btn:hover {
+    background-color: #343a40;
+    color: #fafcfb; 
+    border-style: solid;   
+    border-width: thin;    
+    border-color: #fafcfb;
 }
