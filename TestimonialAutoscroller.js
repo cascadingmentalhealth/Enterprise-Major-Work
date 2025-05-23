@@ -16,14 +16,13 @@ testimonials.forEach(testimonial => {
     testimonial.classList.remove('prev');
     testimonial.classList.remove('next');
 });
-               
+                           
+const centerIndex = (currentIndex + 1) % testimonials.length;
+const prevIndex = currentIndex % testimonials.length;
+const nextIndex = (currentIndex + 2) % testimonials.length;
 
-testimonials[currentIndex].classList.add('center');
-               
-const prevIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;
-const nextIndex = (currentIndex + 1) % testimonials.length;
-               
 testimonials[prevIndex].classList.add('prev');
+testimonials[centerIndex].classList.add('center');
 testimonials[nextIndex].classList.add('next');
                
 track.style.transform = `translateX(-${currentIndex * testimonialWidth}%)`;

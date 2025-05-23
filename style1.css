@@ -98,7 +98,6 @@ body {
 
 .slideshow-container {
     width: 100%;
-    max-width: 1200px;
     position: relative;
     overflow:hidden;
     padding: 20px 0;
@@ -150,6 +149,7 @@ body {
     color: #555;
     margin-bottom: 20px;
     flex-grow: 1;
+    text-align: center;
 }
        
 .testimonial-author {
