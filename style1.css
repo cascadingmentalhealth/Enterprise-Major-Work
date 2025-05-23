@@ -211,6 +211,7 @@ body {
        
 .text-original {
     color: #000;
+    white-space: normal;
 }
        
 .text-overlay {
@@ -219,9 +220,10 @@ body {
     left: 0;
     width: 0;
     color: #B3e9c7; 
-    white-space: nowrap;
+    white-space: normal;
     overflow: hidden;
-    transition: width 0.1s linear;
+    transition: width 0.3s ease-out;
+    word-break: break-word;
 }
 
 /* Get started box */
