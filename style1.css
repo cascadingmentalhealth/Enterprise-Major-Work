@@ -166,6 +166,7 @@ body {
     margin-top: 40px;
 }
 
+/*HOMEPAGE SPECIFIC CSS */
 
 /* Home text */
 
@@ -357,3 +358,5 @@ body {
     border-width: thin;    
     border-color: #fafcfb;
 }
+
+/* Login/Sign Up PAGE SPECIFIC CSS */
