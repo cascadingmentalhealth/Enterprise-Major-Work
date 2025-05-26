@@ -563,3 +563,63 @@ body.AboutUs {
     opacity: 1;
     transform: translateY(0);
 }
+
+/* STUDENT HOMEPAGE SPECIFIC CSS */
+body.studenthome {
+    background-color:#fafcfb;
+    --sb-expanded: 12.5rem;
+    --sb-width: 5rem;
+}
+
+aside {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 1rem;
+    width: var(--sb-expanded);
+    background-image: linear-gradient(to bottom, #F0fff1, #dfffeb)
+}
+
+nav {
+    height: 100%;
+}
+
+nav ul {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    flex-flow:column;
+    gap: 0.25rem;
+}
+
+nav li:last-child {
+    margin-top: auto;
+}
+
+nav a {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    padding: 0.625rem 0.875rem;
+    line-height: 1;
+    color:#343a40;
+    text-decoration: none;
+}
+
+nav a.studentactive, nav a:hover, nav a:focus-visible {
+    outline: none;
+    color:#60a478;
+    transition: 0.3s ease;
+}
+
+nav a span {
+    font-size: 0.875rem;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.sb-expanded nav a span {
+    opacity: 1;
+    visibility: visible;
+}
