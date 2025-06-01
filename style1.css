@@ -567,8 +567,10 @@ body.AboutUs {
 /* STUDENT HOMEPAGE SPECIFIC CSS */
 body.studenthome {
     background-color:#fafcfb;
-    --sb-expanded: 12.5rem;
-    --sb-width: 5rem;
+}
+
+body.sb-expanded aside {
+    width: 11rem; 
 }
 
 aside {
@@ -577,8 +579,8 @@ aside {
     left: 0;
     bottom: 0;
     padding: 1rem;
-    width: var(--sb-expanded);
-    background-image: linear-gradient(to bottom, #F0fff1, #dfffeb)
+    width: 5rem;
+    background-image: linear-gradient(to bottom, #dfffeb, #F0fff1, #dfffeb);
 }
 
 nav {
@@ -611,10 +613,11 @@ nav a.studentactive, nav a:hover, nav a:focus-visible {
     outline: none;
     color:#60a478;
     transition: 0.3s ease;
+    background-color: #fafcfb;
 }
 
 nav a span {
-    font-size: 0.875rem;
+    font-size: 1rem;
     opacity: 0;
     visibility: hidden;
 }
@@ -622,4 +625,11 @@ nav a span {
 .sb-expanded nav a span {
     opacity: 1;
     visibility: visible;
+}
+
+main h1 {
+    padding-top: 3rem;
+    text-align: center;
+    font-weight: 600;
+    font-size: 100px;
 }
