@@ -573,6 +573,10 @@ body.sb-expanded aside {
     width: 11rem; 
 }
 
+body.sb-expanded .card-container {
+    margin-left: 15rem;
+}
+
 aside {
     position: fixed;
     top: 0;
@@ -632,4 +636,93 @@ main h1 {
     text-align: center;
     font-weight: 600;
     font-size: 100px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    transition: margin-left 0.5s ease-in-out;
+}
+
+.lesson-card {
+    background-color: white;
+    border: 2px solid #C2f8cb;
+    border-left: 5px solid #B3e9c7;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+    padding: 1.5rem;
+    transition: max-height 1.5s ease, box-shadow 0.5s ease;
+    max-height: 130px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+    cursor: pointer;
+}
+
+.lesson-card:hover {
+    max-height: 300px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+}
+
+.card-back {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 1s ease, opacity 0.6s ease;
+}
+
+.lesson-card:hover .card-back {
+    max-height: 200px;
+    opacity: 1;
+    transition-delay: 0.2s;
+}
+
+.card-front p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #343a40;
+}
+
+.card-back p {
+    font-size: 1rem;
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+    color: #343a40;
+    transition: opacity 0.3s ease;
+}
+
+.lesson-button {
+    background-color: #B3e9c7;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.2rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.lesson-button:hover {
+    background-color: #60a478;
+}
+
+.lesson-button .arrow {
+    margin-left: 0.5rem;
+    opacity: 0;
+    transform: translateX(-5px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.lesson-button:hover .arrow {
+    opacity: 1;
+    transform: translateX(2px);
 }
