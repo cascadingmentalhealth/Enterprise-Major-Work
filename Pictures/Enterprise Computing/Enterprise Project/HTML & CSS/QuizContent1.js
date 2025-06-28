@@ -72,14 +72,39 @@ function handleNext() {
     sBtn.addEventListener('click', handleCheck);
     loadQuestion();
   } else {
+   
     qEl.style.display = 'none';
     aEl.style.display = 'none';
     sBtn.style.display = 'none';
     fbEl.style.display = 'none';
     pcEl.style.display = 'none';
-    rEl.textContent = `Quiz complete! Your score: ${((score / quizData.length) * 100).toFixed(0)}%`;
-    pbFill.style.width = '100%';
-  }
+    document.querySelector('.qz-module-progressbar').style.display = 'none';
+    document.querySelector('.qz-module-header button').style.display = 'none';
+
+   rEl.innerHTML = '';
+  const resultContainer = document.createElement('div');
+  resultContainer.className = 'qz-module-result-container';
+  rEl.appendChild(resultContainer);
+
+  const resultText = document.createElement('div');
+  resultText.className = 'qz-module-result-text';
+  resultText.textContent = 'Good Work! Your result is';
+  resultContainer.appendChild(resultText);
+
+  const scorePercentage = ((score / quizData.length) * 100).toFixed(0);
+  const scoreEl = document.createElement('div');
+  scoreEl.className = 'qz-module-result-score';
+  scoreEl.textContent = `${scorePercentage}%`;
+  resultContainer.appendChild(scoreEl);
+
+  const returnBtn = document.createElement('button');
+  returnBtn.textContent = 'Return Home';
+  returnBtn.className = 'qz-module-result-btn';
+  returnBtn.onclick = () => {
+    window.location.href = 'StudentHome.html';
+  };
+  resultContainer.appendChild(returnBtn);
+ }
 }
 
 loadQuestion();
