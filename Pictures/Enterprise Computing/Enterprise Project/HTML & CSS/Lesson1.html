@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Home</title>
+    <link href="style1.css" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/aa7c672dba.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body class="studenthome sb-expanded">
+
+    <aside class="fade-in">
+        <nav>
+            <ul>
+                <li>
+                    <a href="StudentHome.html">
+                        <i class="fa-solid fa-house"></i>
+                        <span> Homepage </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-pencil"></i>
+                        <span> Quizzes </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-chart-simple"></i>
+                        <span> Dashboard </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Homepage.html" >
+                        <i class="fa-solid fa-arrow-left"></i>
+                        <span> Log Out </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-resize-btn>
+                        <i class="fa-solid fa-x"></i>
+                        <span> Collapse </span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main>
+
+        <div class="lesson-content">
+            <section class="data-section fade-in">
+                <h2>Quantitative Data</h2>
+                <p><strong>Definition:</strong> Numerical data that can be measured, counted, and statistically analyzed. Answers questions like <em>how many</em>, <em>how much</em>, or <em>how often</em>.</p>
+                <ul>
+
+                    <li><strong>Examples:</strong> Sales, profits, revenue, temperature, web traffic</li>
+                    <li><strong>Types:</strong> Discrete (whole numbers), Continuous (any value in range)</li>
+                    <li><strong>Measurement Tools:</strong> Surveys with numeric scales, sensors</li>
+                    <li><strong>Data Format:</strong> CSV, Excel, SQL</li>
+                    <li><strong>Representation:</strong> Line, bar, histogram, scatter plots</li>
+                    <li><strong>Strengths:</strong> Easy comparison, suitable for trends and forecasting</li>
+                </ul>
+            </section>
+
+            <section class="data-section fade-in">
+                <h2>Qualitative Data</h2>
+                <p><strong>Definition:</strong> Descriptive, non-numerical data capturing qualities and characteristics. Answers <em>what</em>, <em>why</em>, or <em>how</em>.</p>
+                <ul>
+                    <li><strong>Examples:</strong> Opinions, emotions, interview responses</li>
+                    <li><strong>Types:</strong> 
+                        <ul>
+                            <li>Nominal - unordered categories (e.g., gender)</li>
+                            <li>Ordinal - ordered categories (e.g., rankings)</li>
+                        </ul>
+                    </li>
+                    <li><strong>Measurement Tools:</strong> Open-ended surveys, focus groups</li>
+                    <li><strong>Data Format:</strong> Strings, transcripts, images</li>
+                    <li><strong>Representation:</strong> Pie/bar charts, word clouds, tag maps</li>
+                    <li><strong>Strengths:</strong> Depth and context, reveals human behavior</li>
+                </ul>
+            </section>
+
+            <section class="data-section comparison fade-in">
+                <h2 class="fade-in">Key Differences Summary</h2>
+                <table class="fade-in">
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>Quantitative Data</th>
+                            <th>Qualitative Data</th>
+                        </tr>
+                    </thead>
+                <tbody>
+                    <tr>
+                        <td>Nature</td>
+                        <td>Numerical</td>
+                        <td>Descriptive/Text-based</td>
+                    </tr>
+                    <tr>
+                        <td>Purpose</td>
+                        <td>Measure, compare, analyze</td>
+                        <td>Explain, interpret, explore</td>
+                    </tr>
+                    <tr>
+                        <td>Data Format</td>
+                        <td>Numbers (integers, decimals)</td>
+                        <td>Words, symbols, images</td>
+                    </tr>
+                    <tr>
+                        <td>Methods of Analysis</td>
+                        <td>Statistical/mathematical</td>
+                        <td>Thematic/content analysis</td>
+                    </tr>
+                    <tr>
+                       <td>Common Tools</td>
+                       <td>Excel, SQL, Tableau</td>
+                       <td>NVivo, ATLAS.ti</td>
+                    </tr>
+                    <tr>
+                       <td>Examples</td>
+                       <td>Sales, age, income</td>
+                       <td>Feedback, comments</td>
+                    </tr>
+                 </tbody>
+            </table>
+           </section>
+
+           <section class="video-section fade-in">
+            <h2 class="fade-in">Watch this video for further explanation</h2>
+            <div class="video-wrapper fade-in">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/q7yeFyp_E58?si=tFcPnDfulr8Wr94H"
+                 title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+            </section>
+
+           <div class="quiz-button-wrapper">
+               <a href="#" class="quizroute-button">
+               <span class="text">Take Quiz</span>
+               <span class="arrow">→</span>
+               </a>
+           </div>
+
+
+
+
+        </div>
+
+
+    </main>
+    
+    <script src="SideBar.js"></script>
+    <script src="DynamicOpen.js"></script>
+    <script src="ProgressBar.js"></script>
+
+</body>
+</html>
