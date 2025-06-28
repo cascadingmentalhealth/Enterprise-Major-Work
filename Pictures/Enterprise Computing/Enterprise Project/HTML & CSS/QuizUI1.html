@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz: Quantitative vs Qualitative</title>
+  <link href="style1.css" rel="stylesheet" type="text/css">
+  <script src="https://kit.fontawesome.com/aa7c672dba.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body class="quiz1page fade-in">
+    <div class="qz-vertical-wrapper">
+        <div class="qz-module-wrapper">
+            <div class="qz-module-header">
+                <span id="qz-module-progress-count">1 of 10</span>
+                <button onclick="window.location.href='StudentHome.html'">
+                    <i class="fa-solid fa-xmark"></i>
+               </button>
+            </div>
+
+            <div class="qz-module-progressbar">
+                <div class="qz-module-progress" id="qz-module-progress"></div>
+            </div>
+
+            <div class="qz-module-question" id="qz-module-question">Loading...</div>
+            <div class="qz-module-answers" id="qz-module-answers"></div>
+            <div class="qz-module-feedback" id="qz-module-feedback"></div>
+            <div class="qz-module-button-container">
+                <button class="qz-module-btn" id="qz-module-submit" disabled>Check Answer</button>
+            </div>
+            <div class="qz-module-result" id="qz-module-result"></div>
+        </div>
+    </div>
+
+  <script src="QuizContent1.js"></script>
+  <script src="DynamicOpen.js"></script>
+</body>
+</html>
