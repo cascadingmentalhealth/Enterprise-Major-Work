@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Home</title>
+    <link href="style1.css" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/aa7c672dba.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body class="studenthome sb-expanded">
+
+    <aside class="fade-in">
+        <nav>
+            <ul>
+                <li>
+                    <a href="TeacherHome.html" class="studentactive">
+                        <i class="fa-solid fa-house"></i>
+                        <span> Homepage </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-pencil"></i>
+                        <span> Quizzes </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="TeacherDashboard.html">
+                        <i class="fa-solid fa-chart-simple"></i>
+                        <span> Dashboard </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Homepage.html" >
+                        <i class="fa-solid fa-arrow-left"></i>
+                        <span> Log Out </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-resize-btn>
+                        <i class="fa-solid fa-x"></i>
+                        <span> Collapse </span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="fade-in">
+        <div class="content-wrapper">
+        <h1> Welcome Teacher 1!</h1>
+
+            <p class="teacher-subheading">You can view the following insights regarding your class:</p>
+
+        <ul class="teacher-features-list">
+            <li><span class="teacher-dot"></span> A heatmap of module completion across students</li>
+            <li><span class="teacher-dot"></span> The spread of scores across all students</li>
+            <li><span class="teacher-dot"></span> The ability to filter and view specific student data</li>
+        </ul>
+       
+
+        <div class="results fade-in">
+            <h1> Track students progress! </h1>
+            <a href="TeacherDashboard.html" class="dashboard-btn"> Visit Dashboard </a>
+        </div>
+
+        </div>
+
+    </main>
+    
+    <script src="SideBar.js"></script>
+    <script src="DynamicOpen.js"></script>
+
+</body>
+</html>

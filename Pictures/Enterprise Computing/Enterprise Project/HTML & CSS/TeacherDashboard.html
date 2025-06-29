@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Dashboard</title>
+    <link href="style1.css" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/aa7c672dba.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body class="studenthome sb-expanded">
+
+    <aside class="fade-in">
+        <nav>
+            <ul>
+                <li>
+                    <a href="TeacherHome.html">
+                        <i class="fa-solid fa-house"></i>
+                        <span> Homepage </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-pencil"></i>
+                        <span> Quizzes </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="TeacherDashboard.html" class="studentactive">
+                        <i class="fa-solid fa-chart-simple"></i>
+                        <span> Dashboard </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Homepage.html" >
+                        <i class="fa-solid fa-arrow-left"></i>
+                        <span> Log Out </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-resize-btn>
+                        <i class="fa-solid fa-x"></i>
+                        <span> Collapse </span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="dashboard-container fade-in">
+
+        <header class="dashboard-header">
+            <h1>Teacher Dashboard</h1>
+            <p>View how your students are doing through simple and easy to understand graphs. There is an explaination of what each graph is and how it can be used to improve the quality of lessons in your class!</p>
+        </header>
+       
+        <div class="content-wrapper">
+
+        <section class="dashboard-viz">
+            <div class='tableauPlaceholder' id='viz1751201665282' style='position: relative'>
+                <noscript>
+                    <a href='#'>
+                        <img alt='Teacher Dashboard'
+                             src='https://public.tableau.com/static/images/Ma/MajorWorkTester/TeacherDashboard/1_rss.png'
+                             style='border: none' />
+                    </a>
+                </noscript>
+                <object class='tableauViz' style='display:none;'>
+                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                    <param name='embed_code_version' value='3' />
+                    <param name='site_root' value='' />
+                    <param name='name' value='MajorWorkTester/TeacherDashboard' />
+                    <param name='tabs' value='no' />
+                    <param name='toolbar' value='yes' />
+                    <param name='static_image' value='https://public.tableau.com/static/images/Ma/MajorWorkTester/TeacherDashboard/1.png' />
+                    <param name='animate_transition' value='yes' />
+                    <param name='display_static_image' value='yes' />
+                    <param name='display_spinner' value='yes' />
+                    <param name='display_overlay' value='yes' />
+                    <param name='display_count' value='yes' />
+                    <param name='language' value='en-US' />
+                    <param name='filter' value='publish=yes' />
+                </object>
+            </div>
+            <script type='text/javascript'>
+                var divElement = document.getElementById('viz1751201665282');
+                var vizElement = divElement.getElementsByTagName('object')[0];
+                vizElement.style.width = '1100px';
+                vizElement.style.height = '2550px';
+                var scriptElement = document.createElement('script');
+                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                vizElement.parentNode.insertBefore(scriptElement, vizElement);
+            </script>
+        </div>
+
+        <div class="results fade-in">
+            <h1> Go back to homepage </h1>
+            <a href="TeacherHome.html" class="dashboard-btn"> Go home </a>
+        </div>
+
+    </main>
+    
+    <script src="SideBar.js"></script>
+    <script src="DynamicOpen.js"></script>
+
+</body>
+</html>

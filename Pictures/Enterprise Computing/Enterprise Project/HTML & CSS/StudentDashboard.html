@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Home</title>
+    <title>Student Dashboard</title>
     <link href="style1.css" rel="stylesheet" type="text/css">
     <script src="https://kit.fontawesome.com/aa7c672dba.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -52,7 +52,7 @@
      <main class="dashboard-container fade-in">
         <header class="dashboard-header">
             <h1>Student Dashboard</h1>
-            <p>This dashboard visualises your learning progress, quiz results, and study habits.</p>
+            <p>This dashboard visualises your learning progress, quiz results, and study habits. You can analyse them to strengthen your understanding of different topics</p>
         </header>
 
         <section class="dashboard-viz">
@@ -86,7 +86,7 @@
            <script type='text/javascript'>
                 const divElement = document.getElementById('viz1751196701393');
                 const vizElement = divElement.getElementsByTagName('object')[0];
-                vizElement.style.width = '1000px';
+                vizElement.style.width = '1100px';
                 vizElement.style.height = '1550px';
                 const scriptElement = document.createElement('script');
                 scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
@@ -94,6 +94,12 @@
            </script>
             
         </section>
+
+        <div class="results fade-in">
+            <h1> Take more lessons! </h1>
+            <a href="StudentHome.html" class="dashboard-btn"> Go Home </a>
+        </div>
+
     </main>
 
     <script src="SideBar.js"></script>
